@@ -1,0 +1,1143 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 10px;
+}
+body {
+	overflow: auto;
+}
+
+@font-face {
+	font-family: 'P22 Underground Demi';
+	src: url('fonts/P22UndergroundCYPro-Demi.eot');
+	src: url('fonts/P22UndergroundCYPro-Demi.eot?#iefix') format('embedded-opentype'),
+		url('fonts/P22UndergroundCYPro-Demi.woff2') format('woff2'),
+		url('fonts/P22UndergroundCYPro-Demi.woff') format('woff'),
+		url('fonts/P22UndergroundCYPro-Demi.ttf') format('truetype'),
+		url('fonts/P22UndergroundCYPro-Demi.svg#P22UndergroundCYPro-Demi') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'P22 Underground Book';
+	src: url('fonts/P22UndergroundCYPro-Book.eot');
+	src: url('fonts/P22UndergroundCYPro-Book.eot?#iefix') format('embedded-opentype'),
+		url('fonts/P22UndergroundCYPro-Book.woff2') format('woff2'),
+		url('fonts/P22UndergroundCYPro-Book.woff') format('woff'),
+		url('fonts/P22UndergroundCYPro-Book.ttf') format('truetype'),
+		url('fonts/P22UndergroundCYPro-Book.svg#P22UndergroundCYPro-Book') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'P22 Underground Heavy';
+	src: url('fonts/P22UndergroundCYPro-Heavy.eot');
+	src: url('fonts/P22UndergroundCYPro-Heavy.eot?#iefix') format('embedded-opentype'),
+		url('fonts/P22UndergroundCYPro-Heavy.woff2') format('woff2'),
+		url('fonts/P22UndergroundCYPro-Heavy.woff') format('woff'),
+		url('fonts/P22UndergroundCYPro-Heavy.ttf') format('truetype'),
+		url('fonts/P22UndergroundCYPro-Heavy.svg#P22UndergroundCYPro-Heavy') format('svg');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'P22 Underground Thin';
+	src: url('fonts/P22UndergroundCYPro-Thin.eot');
+	src: url('fonts/P22UndergroundCYPro-Thin.eot?#iefix') format('embedded-opentype'),
+		url('fonts/P22UndergroundCYPro-Thin.woff2') format('woff2'),
+		url('fonts/P22UndergroundCYPro-Thin.woff') format('woff'),
+		url('fonts/P22UndergroundCYPro-Thin.ttf') format('truetype'),
+		url('fonts/P22UndergroundCYPro-Thin.svg#P22UndergroundCYPro-Thin') format('svg');
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'P22 Underground Medium';
+	src: url('fonts/P22UndergroundCYPro-Medium.eot');
+	src: url('fonts/P22UndergroundCYPro-Medium.eot?#iefix') format('embedded-opentype'),
+		url('fonts/P22UndergroundCYPro-Medium.woff2') format('woff2'),
+		url('fonts/P22UndergroundCYPro-Medium.woff') format('woff'),
+		url('fonts/P22UndergroundCYPro-Medium.ttf') format('truetype'),
+		url('fonts/P22UndergroundCYPro-Medium.svg#P22UndergroundCYPro-Medium') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+
+#header {
+	padding-bottom: 2rem;
+	background: url(../img/bg.jpg) center center no-repeat;
+	background-size: cover;
+}
+.header-first-line {
+	margin-top: 5rem;
+}
+
+.header {
+	&-button {
+		input {
+			padding: 2rem;
+			font-family: 'P22 Underground Thin';
+			font-size: 1.5rem;
+			background-color: rgba(0,0,0,.1);
+			color: #fff;
+			border: 1px solid #fff;
+			outline: none;
+		}
+	}
+	&-phonenum {
+		font-family: 'P22 Underground Heavy';
+		font-size: 2.5rem;
+		color: #fff;
+	}
+	&-title {
+		font-family: 'P22 Underground Heavy';
+		font-size: 3.7rem;
+		color: #ffff33;
+		text-align: center;
+		margin-top: 5rem;
+	}
+}
+.header-logo {
+	img {
+		width: 13rem;
+		margin-left: 3rem;
+	}
+	&-text {
+		.avtozaim {
+			font-family: 'P22 Underground Heavy';
+			font-size: 1.8rem;
+			color: #fff;
+		}
+		.pts {
+			font-family: 'P22 Underground Thin';
+			font-size: 1.2rem;
+			color: #fff;
+		}
+	}
+}
+
+.header-bonus {
+	width: 44rem;
+	margin-left: 13rem;
+	ul {
+		margin-top: 15rem;
+		li {
+			font-family: 'P22 Underground Book';
+			font-size: 1.7rem;
+			color: #fff;
+			list-style: none;
+			span {
+				font-size: 1.3rem;
+			}
+		}
+	}
+	&-form {
+		margin-top: 5.5rem;
+	}
+}
+
+.header-form {
+	width: 40rem;
+	background-color: #fff;
+	border-radius: 0.5rem;
+	padding-top: 2rem;
+	padding-bottom: 3rem;
+	&-title {
+		font-family: 'P22 Underground Book';
+		font-size: 2.2rem;
+		color: #333333;
+		text-align: center;
+	}
+	&-name {
+		text-align: center;
+		input {
+			outline: none;
+		}
+		&_input {
+			height: 6rem;
+			width: 34rem;
+			padding: 9px;
+			padding-left: 7rem;
+			background: url(../img/user.png)  no-repeat;
+			background-size: 18%;
+			font-family: 'P22 Underground Book';
+			font-size: 1.5rem;
+			margin-top: 2rem;
+			border-radius: 0.6rem 0.6rem 0.6rem 0.6rem;
+			border: 1px solid #999999;
+		}
+	}
+	&-phone {
+		text-align: center;
+		input {
+			outline: none;
+		}
+		&_input {
+			height: 6rem;
+			width: 34rem;
+			padding: 9px;
+			background: url(../img/phone.png) no-repeat;
+			background-size: 18%;
+			padding-left: 7rem;
+			font-family: 'P22 Underground Book';
+			font-size: 1.5rem;
+			margin-top: 2rem;
+			border-radius: 0.6rem 0.6rem 0.6rem 0.6rem;
+			border: 1px solid #999999;
+		}
+	}
+	&-button {
+		text-align: center;
+		.btns {
+			outline: none;
+			text-align: center;
+			margin-top: 1rem;
+			padding: 2rem 8.3rem;
+			border-radius: 0.6rem 0.6rem 0.6rem 0.6rem;
+			border: none;
+			background-color: #ffff33;
+			font-family: 'P22 Underground Book';
+			font-size: 1.5rem;
+			border-bottom: 4px solid #999900;
+			&:active {
+				border-bottom: 1px solid #999900;
+				margin-top: 1.3rem;
+			}
+		}
+	}
+}
+
+
+
+
+
+/* -------------- EGGS -------------- */
+
+#eggs {
+}
+.item {
+	text-align: center;
+	width: 8rem;
+	height: 8rem;
+	background-color: #ffff33;
+	margin: 0 auto;
+	margin-top: 10rem;
+	border-radius: 50%;
+	i {
+		line-height: 8rem;
+		font-style: normal;
+		font-size: 3.6rem;
+	}
+	&-text {
+		text-align: center;
+		font-family: 'P22 Underground Book';
+		font-size: 1.8rem;
+		color: #333333;
+		margin: 3rem;
+	}
+}
+
+
+
+
+
+
+/* ------------- Terms ------------- */
+section#terms {
+	background-color: #fbfbfb;
+	padding-top: 2rem;
+	padding-bottom: 3rem;
+}
+
+.terms-item {
+	background-color: #fbfbfb;
+	margin-left: 3rem;
+	&_num {
+		display: block;
+		text-align: center;
+		font-family: 'P22 Underground Heavy';
+		font-size: 10rem;
+		color: #ffff33;
+	}
+	&_dot {
+		display: block;
+		height: 1.3rem;
+		width: 1.3rem;
+		background-color: #ffff33;
+		margin: 0 auto;
+		border-radius: 50%;
+	}
+	&_text {
+		display: block;
+		text-align: center;
+		font-family: 'P22 Underground Book';
+		font-size: 1.8rem;
+		color: #333333;
+		margin-top: 2rem;
+	}
+}
+
+
+
+
+
+
+//  --------------- Order --------------
+section#order {
+	background-color: #333333;
+	margin-top: 4rem;
+	padding-bottom: 4rem;
+	margin-bottom: 6rem;
+}
+
+.make-order {
+	&-name {
+		&_input {
+			height: 6rem;
+			width: 34rem;
+			padding: 9px;
+			background: url(../img/user-white.png) 0 0 no-repeat;
+			background-size: 18%;
+			padding-left: 7rem;
+			margin-top: 4rem;
+			font-family: 'P22 Underground Book';
+			font-size: 1.5rem;
+			border-radius: 0.6rem 0.6rem 0.6rem 0.6rem;
+			border: 1px solid #999999;
+			background-color: #333333;
+			color: #fff;
+			outline: none;
+		}
+	}
+	&-phone {
+		&_input {
+			height: 6rem;
+			width: 34rem;
+			padding: 9px;
+			background: url(../img/phone-white.png) 0 0 no-repeat;
+			background-size: 18%;
+			padding-left: 7rem;
+			margin-top: 4rem;
+			font-family: 'P22 Underground Book';
+			font-size: 1.5rem;
+			border-radius: 0.6rem 0.6rem 0.6rem 0.6rem;
+			border: 1px solid #999999;
+			background-color: #333333;
+			color: #fff;
+			outline: none;
+		}
+	}
+	&-button {
+		.btns {
+			outline: none;
+			text-align: center;
+			margin-top: 4rem;
+			padding: 2rem 7rem;
+			border-radius: 0.6rem 0.6rem 0.6rem 0.6rem;
+			border: none;
+			background-color: #ffff33;
+			font-family: 'P22 Underground Book';
+			font-size: 1.5rem;
+			border-bottom: 4px solid #999900;
+			&:active {
+				border-bottom: 1px solid #999900;
+				margin-top: 4.3rem;
+			}
+		}
+	}
+}
+
+
+	
+/* --------------- Footer --------------- */
+
+section#footer {
+	background-color: #333333;
+	padding-bottom: 5rem;
+}
+.footer {
+	&-title {
+		font-family: 'P22 Underground Book';
+		color: #fff;
+		font-size: 2.2rem;
+		text-align: center;
+		margin-top: 3rem;
+	}
+	&-order {
+		&-name {
+			&_input {
+				height: 6rem;
+				width: 34rem;
+				padding: 9px;
+				background: url(../img/user-white.png) 0 0 no-repeat;
+				background-size: 18%;
+				padding-left: 7rem;
+				margin-top: 4rem;
+				font-family: 'P22 Underground Book';
+				font-size: 1.5rem;
+				border-radius: 0.6rem 0.6rem 0.6rem 0.6rem;
+				border: 1px solid #999999;
+				background-color: #333333;
+				color: #fff;
+				outline: none;
+			}
+		}
+		&-phone {
+			&_input {
+				height: 6rem;
+				width: 34rem;
+				padding: 9px;
+				background: url(../img/phone-white.png) 0 0 no-repeat;
+				background-size: 18%;
+				padding-left: 7rem;
+				margin-top: 4rem;
+				font-family: 'P22 Underground Book';
+				font-size: 1.5rem;
+				border-radius: 0.6rem 0.6rem 0.6rem 0.6rem;
+				border: 1px solid #999999;
+				background-color: #333333;
+				color: #fff;
+				outline: none;
+			}
+		}
+		&-button {
+			.btns {
+				outline: none;
+				text-align: center;
+				margin-top: 4rem;
+				padding: 2rem 7rem;
+				border-radius: 0.6rem 0.6rem 0.6rem 0.6rem;
+				border: none;
+				background-color: #ffff33;
+				font-family: 'P22 Underground Book';
+				font-size: 1.5rem;
+				border-bottom: 4px solid #999900;
+				&:active {
+					border-bottom: 1px solid #999900;
+					margin-top: 4.3rem;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+// ------------------- Modal window
+.modal {
+	&-body {
+		text-align: center;
+	}
+	&-name {
+		&-input {
+			background: url(../img/user.png) no-repeat;
+			background-size: 23%;
+			outline: none;
+			height: 6rem;
+			width: 26rem;
+			margin-bottom: 1rem;
+			padding-left: 7rem;
+			border-radius: 0.6rem 0.6rem 0.6rem 0.6rem;
+			border: 1px solid #999999;
+		}
+	}
+	&-phone {
+		&-input {
+			background: url(../img/phone.png) no-repeat;
+			background-size: 23%;
+			outline: none;
+			height: 6rem;
+			width: 26rem;
+			padding-left: 7rem;
+			border-radius: 0.6rem 0.6rem 0.6rem 0.6rem;
+			border: 1px solid #999999;
+		}
+	}
+	&-form {
+		&-button {
+			text-align: center;
+			.btns {
+				outline: none;
+				padding: 1rem 3rem;
+				border-radius: 0.6rem 0.6rem 0.6rem 0.6rem;
+				border: none;
+				background-color: #ffff33;
+				font-family: 'P22 Underground Book';
+				font-size: 1.5rem;
+				border-bottom: 4px solid #999900;
+				&:active {
+					border-bottom: 1px solid #999900;
+					margin-top: 0.3rem;
+				}
+			}
+		}
+	}
+}
+
+ 
+
+
+//  ------------ Form Validation
+
+.error {
+	border: 1px solid red;
+}
+label {
+	&.error {
+		border: none;
+		color: red;
+
+	}
+}
+
+
+
+
+// -----------------------------------------
+
+/* --------- Media 993-1199 ------------ */
+
+@media (min-width: 993px) and (max-width: 1199px) {
+	.header-bonus {
+		margin-left: 3rem;	
+	}
+	.header-logo {
+		img {
+			margin-left: 0;
+		}
+	}
+	.make-order {
+		&-name {
+			&_input {
+				width: 30rem;
+				background-size: 20%;
+			}
+		}
+		&-phone {
+			&_input {
+				width: 30rem;
+				background-size: 20%;
+			}
+		}
+		&-button {
+			.btns {
+				padding: 2rem 6rem;
+			}
+		}
+	}
+	.footer {
+		&-order {
+			&-phone{
+				&_input {
+					width: 30rem;
+					background-size: 20%;
+				}
+			}
+			&-name{
+				&_input {
+					width: 30rem;
+					background-size: 20%;
+				}
+			}
+			&-button {
+				.btns {
+					padding: 1.9rem 6rem;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+/* --------- Media 769-992 ------------ */
+
+@media (min-width: 769px) and (max-width: 992px) {
+	html {
+		font-size: 8px;
+	}
+	.header-logo {
+		img {
+			width: 10rem;
+		}
+	}
+	.header-bonus {
+		margin-left: 2rem;
+	}
+ 	.header-form {
+		&-button {
+			.btns {
+				&:active {
+					margin-top: 1.4rem;
+				}
+			}
+		}
+	}
+	.terms-item {
+		margin-left: 0;
+	}
+	.footer {
+		&-order {
+			&-phone{
+				&_input {
+					width: 29rem;
+					background-size: 20%;
+				}
+			}
+			&-name{
+				&_input {
+					width: 29rem;
+					background-size: 20%;
+				}
+			}
+			&-button {
+				.btns {
+					padding: 1.8rem 5rem;
+				}
+			}
+		}
+	}
+	.make-order {
+		&-name {
+			&_input {
+				width: 29rem;
+				background-size: 20%;
+			}
+		}
+		&-phone {
+			&_input {
+				width: 29rem;
+				background-size: 20%;
+			}
+		}
+		&-button {
+			.btns {
+				padding: 2rem 5rem;
+				&:active {
+					margin-top: 4.4rem;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+/* --------- Media 700-768 ------------ */
+
+@media (min-width: 700px) and (max-width: 768px) {
+	html {
+		font-size: 8px;
+	}
+	.header-logo {
+		display: flex;
+		justify-content: flex-end;
+		img {
+			margin-left: 0;
+			width: 10rem;
+		}
+	}
+	.header-button {
+		text-align: center;
+	}
+	.header-phonenum {
+		text-align: center;
+		margin-top: 4rem;	
+	}
+	.header-title {
+		font-size: 3rem;
+		margin-top: 2rem;
+	}
+	.header-bonus {
+		margin-left: 0;
+		margin: 0 auto;
+		padding-bottom: 2rem;
+		ul {
+			margin-top: 1rem;
+		}
+		&-form {
+		margin-top: 2rem;
+		}
+	}
+	.header-form {
+		margin-top: 2rem;
+		margin: 0 auto;
+		&-button {
+			.btns {
+				&:active {
+					margin-top: 1.4rem;
+				}
+			}
+		}
+	}
+	.terms-item {
+		margin-left: 0;
+	}
+	.make-order {
+		text-align: center;
+		&-name {
+			&_input {
+				width: 71rem;
+				background-size: 9%;
+			}
+		}
+		&-phone {
+			&_input {
+				width: 71rem;
+				background-size: 9%;
+				margin-top: 1rem;
+			}
+		}
+		&-button {
+			text-align: center;
+			.btns {
+				margin-left: 0;
+				padding: 2rem 5rem;
+				&:active {
+					margin-top: 4.4rem;
+				}
+			}
+		}
+	}
+	.footer {
+		&-order {
+			text-align: center;
+			&-name {
+				&_input {
+					width: 71rem;
+					background-size: 9%;
+				}
+			}
+			&-phone {
+				&_input {
+					width: 71rem;
+					background-size: 9%;
+					margin-top: 1rem;
+				}
+			}
+			&-button {
+				text-align: center;
+				.btns {
+					padding: 2rem 5rem;
+					margin-top: 2.5rem;
+					&:active {
+						margin-top: 3rem;
+					}
+				}
+			}
+		}
+	}
+	// --------- Modal --------
+	.modal {
+		&-name {
+			&-input {
+				width: 50rem;
+				background-size: 12%;
+			}
+		}
+		&-phone {
+			&-input {
+				width: 50rem;
+				background-size: 12%;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+/* --------- Media 569-699 ------------ */
+
+@media (min-width: 569px) and (max-width: 699px) {
+	html {
+		font-size: 8px;
+	}
+	.header-logo {
+		display: flex;
+		justify-content: flex-end;
+		img {
+			margin-left: 0;
+			width: 10rem;
+		}
+	}
+	.header-button {
+		text-align: center;
+	}
+	.header-phonenum {
+		text-align: center;
+		margin-top: 4rem;	
+	}
+	.header-title {
+		font-size: 3rem;
+		margin-top: 2rem;
+	}
+	.header-bonus {
+		margin-left: 0;
+		margin: 0 auto;
+		padding-bottom: 2rem;
+		ul {
+			margin-top: 1rem;
+		}
+		&-form {
+		margin-top: 2rem;
+		}
+	}
+	.header-form {
+		margin-top: 2rem;
+		margin: 0 auto;
+		&-button {
+			.btns {
+				&:active {
+					margin-top: 1.4rem;
+				}
+			}
+		}
+	}
+	.terms-item {
+		margin-left: 0;
+	}
+	.make-order {
+		text-align: center;
+		&-name {
+			&_input {
+				width: 65rem;
+				background-size: 9%;
+			}
+		}
+		&-phone {
+			&_input {
+				width: 65rem;
+				background-size: 9%;
+				margin-top: 1rem;
+			}
+		}
+		&-button {
+			text-align: center;
+			.btns {
+				margin-left: 0;
+				padding: 2rem 5rem;
+				&:active {
+					margin-top: 4.4rem;
+				}
+			}
+		}
+	}
+	.footer {
+		&-order {
+			text-align: center;
+			&-name {
+				&_input {
+					width: 65rem;
+					background-size: 9%;
+				}
+			}
+			&-phone {
+				&_input {
+					width: 65rem;
+					background-size: 9%;
+					margin-top: 1rem;
+				}
+			}
+			&-button {
+				text-align: center;
+				.btns {
+					padding: 2rem 5rem;
+					margin-top: 2.5rem;
+					&:active {
+						margin-top: 3rem;
+					}
+				}
+			}
+		}
+	}
+	// --------- Modal --------
+	.modal {
+		&-name {
+			&-input {
+				width: 50rem;
+				background-size: 12%;
+			}
+		}
+		&-phone {
+			&-input {
+				width: 50rem;
+				background-size: 12%;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+/* --------- Media 480-568 ------------ */
+
+@media (min-width: 480px) and (max-width: 568px) {
+	html {
+		font-size: 8px;
+	}
+	.header {
+		&-logo {
+			img {
+				width: 10rem;
+			}
+			&-text {
+				margin-left: 2rem;
+			}
+		}
+		&-title {
+			font-size: 3rem;
+			margin-top: 1rem;
+		}
+		&-button {
+			text-align: center;
+		}
+		&-phonenum {
+			margin-top: 2rem;
+			text-align: center;
+		}
+		&-bonus {
+			&-form {
+				margin-top: 1rem;
+			}
+			margin-left: 10%;
+			ul {
+				margin-top: 0rem;
+			}
+		}
+		&-form {
+			margin-top: 2rem;
+			margin-left: 15%;
+		}
+	}
+	.header-form {
+		&-button {
+			.btns {
+				&:active {
+					margin-top: 1.4rem;
+				}
+			}
+		}
+	}
+	.make-order {
+		text-align: center;
+		&-name {
+			&_input {
+				width: 46rem;
+				background-size: 13%;
+			}
+		}
+		&-phone {
+			&_input {
+				width: 46rem;
+				background-size: 13%;
+				margin-top: 1rem;
+			}
+		}
+		&-button {
+			.btns {
+				margin-left: 0;
+				padding: 2rem 7rem;
+				&:active {
+					margin-top: 4.4rem;
+				}
+			}
+		}
+	}
+	.footer {
+		&-order {
+			text-align: center;
+			&-name {
+				&_input {
+					width: 46rem;
+					background-size: 13%;
+				}
+			}
+			&-phone {
+				&_input {
+					width: 46rem;
+					background-size: 13%;
+					margin-top: 1rem;
+				}
+			}
+			&-button {
+				text-align: center;
+				.btns {
+					padding: 2rem 7rem;
+					margin-top: 2.5rem;
+					&:active {
+						margin-top: 3rem;
+					}
+				}
+			}
+		}
+	}
+	// --------- Modal --------
+	.modal {
+		&-name {
+			&-input {
+				width: 50rem;
+				background-size: 12%;
+			}
+		}
+		&-phone {
+			&-input {
+				width: 50rem;
+				background-size: 12%;
+			}
+		}
+	}
+}
+
+
+
+/* --------- Media 320-479 ------------ */
+
+@media (min-width: 320px) and (max-width: 479px) {
+	html {
+		font-size: 8px;
+	}
+	.header {
+		&-logo {
+			img {
+				width: 13rem;
+			}
+			&-text {
+				display: none;
+			}
+		}
+		&-title {
+			font-size: 2.4rem;
+			margin-top: 1rem;
+		}
+		&-button {
+			text-align: right;
+		}
+		&-phonenum {
+			margin-top: 2rem;
+			text-align: center;
+		}
+		&-bonus {
+			display: none;
+			&-form {
+				margin-top: 1rem;
+			}
+			margin-left: 0;
+			ul {
+				margin-top: 0rem;
+			}
+		}
+		&-form {
+			width: 35rem;
+			margin: 0 auto;
+			&-name_input {
+				width: 26rem;
+				background-size: 23%;
+			}
+			&-phone_input {
+				width: 26rem;
+				background-size: 23%;
+			}
+			&-button {
+				.btns {
+					padding: 2rem 5rem;
+					&:active {
+						margin-top: 1.4rem;
+					}
+				}
+			}
+		}
+	}
+	.make-order {
+		text-align: center;
+		&-name {
+			&_input {
+				width: 35rem;
+				background-size: 17%;
+			}
+		}
+		&-phone {
+			&_input {
+				width: 35rem;
+				background-size: 17%;
+				margin-top: 1rem;
+			}
+		}
+		&-button {
+			text-align: center;
+			.btns {
+				margin-left: 0;
+				padding: 1rem 5rem;
+				&:active {
+					margin-top: 4.4rem;
+				}
+			}
+		}
+	}
+	.footer {
+		&-order {
+			text-align: center;
+			&-phone{
+				&_input {
+					width: 35rem;
+					background-size: 17%;
+					margin-top: 1rem;
+				}
+			}
+			&-name{
+				&_input {
+					width: 35rem;
+					background-size: 17%;
+					margin-top: 1rem;
+				}
+			}
+			&-button {
+				text-align: center;
+				.btns {
+					padding: 1rem 5rem;
+					margin-top: 2.5rem;
+					&:active {
+						margin-top: 3rem;
+					}
+				}
+			}
+		}
+	}
+	.modal-dialog {
+		margin: 30px auto;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <section id="header">
+      <div class="container">
+
+        <div class="row">
+          <div class="header-first-line">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3">
+              <div class="header-logo">
+                <img src="img/logo.png" alt="">
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3">
+              <div class="header-logo-text">
+                <div class="row">
+                  <div class="avtozaim">
+                    Автозайм
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="pts">
+                    денежные займы под залог ПТС
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-lg-offset-3 col-md-3 col-md-offset-2 col-sm-4 col-xs-6">
+              <div class="header-button">
+                <input type="button" data-toggle='modal' value='заказать звонок' data-target="#myModal">
+              </div>
+              <!-- <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                Launch demo modal
+              </button> -->
+
+
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+              <div class="header-phonenum">
+                8(843)212-11-07
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 col-md-12">
+            <div class="header-title" dropzone='link'>
+              Получите денежный займ под залог ПТС за 15 минут в размере до 90% от стоимости автомобиля
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="header-bonus-form">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <div class="header-bonus">
+                <ul>
+                  <li><i class="fa fa-angle-right" aria-hidden="true"></i> Авто остается у вас</li>
+                  <li><i class="fa fa-angle-right" aria-hidden="true"></i> Бесплатная оценка автомобиля</li>
+                  <li><i class="fa fa-angle-right" aria-hidden="true"></i> Ни одного случая принудительного изъятия залога</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <div class="header-form">
+
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="header-form-title">
+                      Получите
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="header-form-title">
+                      бесплатную консультацию
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="header-form-title">
+                      по быстрым займам
+                    </div>
+                  </div>
+                </div>
+
+                <form action="mail.php" id='header_form' method='POST'>
+                  <div class="row">
+                    <div class="header-form-name">
+                      <div class="col-lg-12">
+                        <input class='header-form-name_input' type="text" name='username' placeholder='Имя ...'>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="row">
+                    <div class="header-form-phone">
+                      <div class="col-lg-12">
+                        <input class='header-form-phone_input' type="text" name='userphone' placeholder='Телефон ...'>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="header-form-button">
+                        <button class='btns' type='submit' value='Получить консультацию'>Получить консультацию</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="eggs">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="item">
+              <i class="fa fa-car" aria-hidden="true"></i>
+            </div>
+            <div class="item-text">
+              <h4>Авто остается у вас</h4>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="item">
+              <i class="fa fa-briefcase" aria-hidden="true"></i>
+            </div>
+            <div class="item-text">
+              <h4>Нам не важна кредитная история</h4>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="item">
+              <i class="fa fa-money" aria-hidden="true"></i>
+            </div>
+            <div class="item-text">
+              <h4>Вы получите сумму в размере до 90% от стоимость автомобиля</h4>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="item">
+              <i>max</i>
+            </div>
+            <div class="item-text">
+              <h4>Максимальная сумма залога 3 млн</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="item">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+            </div>
+            <div class="item-text">
+              <h4>Время получения 15 минут</h4>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="item">
+              <i class="fa fa-percent" aria-hidden="true"></i>
+            </div>
+            <div class="item-text">
+              <h4>Беспроцентный срок 7 дней</h4>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="item">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
+            <div class="item-text">
+              <h4>Бесплатная оценка автомобиля</h4>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="item">
+              <i class="fa fa-handshake-o" aria-hidden="true"></i>
+            </div>
+            <div class="item-text">
+              <h4>Ни одного случая принудительного изъятия залога</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3 col-lg-offset-3 col-md-3 col-md-offset-3 col-sm-6">
+            <div class="item">
+              <i>4%</i>
+            </div>
+            <div class="item-text">
+              <h4>Ставка 4% в месяц.</h4>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="item">
+              <i class="fa fa-diamond" aria-hidden="true"></i>
+            </div>
+            <div class="item-text">
+              <h4>Полностью прозрачная работа</h4>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <section id="terms">
+      <div class="container">
+        <div class="row">
+          <div class="terms-item col-lg-2 col-md-2 col-sm-4">
+            <span class="terms-item_num">1</span>
+            <span class="terms-item_dot"></span>
+            <span class="terms-item_text">Вы звоните нам</span>
+          </div>
+          <div class="terms-item col-lg-2 col-md-2 col-sm-4">
+            <span class="terms-item_num">2</span>
+            <span class="terms-item_dot"></span>
+            <span class="terms-item_text">Присылаете нам документы для проверки </span>
+          </div>
+          <div class="terms-item col-lg-2 col-md-2 col-sm-4">
+            <span class="terms-item_num">3</span>
+            <span class="terms-item_dot"></span>
+            <span class="terms-item_text">Через 15 минут вам сообщается решение, какую сумму можете получить </span>
+          </div>
+          <div class="terms-item col-lg-2 col-md-2 col-sm-6">
+            <span class="terms-item_num">4</span>
+            <span class="terms-item_dot"></span>
+            <span class="terms-item_text">К вашему приезду менеджер подготавливает необходимые документы </span>
+          </div>
+          <div class="terms-item col-lg-2 col-md-2 col-sm-6">
+            <span class="terms-item_num">5</span>
+            <span class="terms-item_dot"></span>
+            <span class="terms-item_text">Приезжаете за деньгами и уезжаете на своем авто</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    
+    <section id="order">
+      <div class="container">
+        <div class="row">
+          <div class="make-order">
+
+            <form action="mail.php" id='order_form1' method='POST'>
+              <div class="col-lg-4 col-md-4 col-sm-4">
+                <input class='make-order-name_input' type="text" placeholder='Имя ...' name='username'>
+              </div>
+              
+              <div class="col-lg-4 col-md-4 col-sm-4">
+                <input class='make-order-phone_input' type="text" placeholder='Телефон ...' name='userphone'>
+              </div>
+              
+              <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="make-order-button">
+                  <button class='btns' type='submit' value='Получить консультацию'>Получить консультацию</button>
+                </div>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+      
+
+    <section id="map">
+      <div class="container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2730.1208993450045!2d35.342917134198515!3d46.821620288524585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c2afd164287317%3A0x818630dec886e0ac!2z0L_RgNC-0YHQvy4g0KXQvNC10LvRjNC90LjRhtC60L7Qs9C-LCA4Niwg0JzQtdC70LjRgtC-0L_QvtC70YwsINCX0LDQv9C-0YDQvtC20YHQutCw0Y8g0L7QsdC70LDRgdGC0Yw!5e0!3m2!1sru!2sua!4v1509983106458" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-title">Узнай, сколько денег получишь за свой автомобиль!</div>
+        </div>
+        <div class="row">
+          <div class="footer-order">
+
+            <form action="mail.php" id='order_form2' method='POST'>
+              <div class="col-lg-4 col-md-4 col-sm-4">
+                <input class='footer-order-name_input' type="text" placeholder='Имя ...' name='username'>
+              </div>
+              
+              <div class="col-lg-4 col-md-4 col-sm-4">
+                <input class='footer-order-phone_input' type="text" placeholder='Телефон ...' name='userphone'>
+              </div>
+              
+              <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="footer-order-button">
+                  <button class='btns' type='submit' value='Получить консультацию'>Получить консультацию</button>
+                </div>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <!--                    Modal windows               -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title text-center" id="myModalLabel">Введите Ваши данные</h4>
+          </div>
+
+          <form action="mail.php" id='modal_form' method="POST">
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-lg-12">
+                  <input type="text" class="modal-name-input" name='username' placeholder='Имя ...'>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12">
+                  <input type="text" class="modal-phone-input" name='userphone' placeholder='Телефон ...'>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="modal-form-button">
+                    <button class='btns' type='submit' value='Получить консультацию'>Получить консультацию</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src='https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js'></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $("#modal_form").validate({
+          rules: {
+            username: {
+              required: true
+            },
+            userphone: {
+              required: true,
+              digits: true,
+              minlength: 5
+            }
+          },
+          messages: {
+            username: {
+              required: 'Это поле обязательно'
+            },
+            userphone: {
+              required: 'Это поле обязательно',
+              digits: 'Введите цифры',
+              minlength: 'Нужно не менее 5 цифр'
+            }
+          }
+        });
+        $("#header_form").validate({
+          rules: {
+            username: {
+              required: true
+            },
+            userphone: {
+              required: true,
+              digits: true,
+              minlength: 5
+            }
+          },
+          messages: {
+            username: {
+              required: 'Это поле обязательно'
+            },
+            userphone: {
+              required: 'Это поле обязательно',
+              digits: 'Введите цифры',
+              minlength: 'Нужно не менее 5 цифр'
+            }
+          }
+        });
+        $("#order_form1").validate({
+          rules: {
+            username: {
+              required: true
+            },
+            userphone: {
+              required: true,
+              digits: true,
+              minlength: 5
+            }
+          },
+          messages: {
+            username: {
+              required: 'Это поле обязательно'
+            },
+            userphone: {
+              required: 'Это поле обязательно',
+              digits: 'Введите цифры',
+              minlength: 'Нужно не менее 5 цифр'
+            }
+          }
+        });
+        $("#order_form2").validate({
+          rules: {
+            username: {
+              required: true
+            },
+            userphone: {
+              required: true,
+              digits: true,
+              minlength: 5
+            }
+          },
+          messages: {
+            username: {
+              required: 'Это поле обязательно'
+            },
+            userphone: {
+              required: 'Это поле обязательно',
+              digits: 'Введите цифры',
+              minlength: 'Нужно не менее 5 цифр'
+            }
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
